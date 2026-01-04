@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="main-card-container">
+    <div class="cards-container">
+        {% for candidate in candidates %}
+            <div class="card">
+                <img src="{{ candidate.image.url }}" alt="{{ candidate.name }}" class="card-img">
+                <div class="card-content">
+                    <h3>{{ candidate.name }}</h3>
+                    <p>{{ candidate.description }}</p>
+                    <a href="{% url 'vote_page' %}" class="btn">Vote</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

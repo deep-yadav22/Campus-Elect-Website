@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="result-container">
+    <div class="result-card">
+        <h2 class="result-card-title">Results</h2>
+        <ul class="result-result-list">
+            {% for candidate, votes in results.items %}
+                <li class="result-item">
+                    <div class="card-body">
+                        <h3>{{ candidate.name }}</h3>
+                        <p>{{ votes }} votes</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

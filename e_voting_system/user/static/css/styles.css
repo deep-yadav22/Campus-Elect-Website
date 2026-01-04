@@ -1,0 +1,97 @@
+
+/* General styles for the registration card */
+.register-card {
+    max-width: 300px;
+    margin: 50px auto;
+    background:  #EEE2B5;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.register-card h2 {
+    margin-bottom: 20px;
+    color: #1F4529;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #47663B;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #47663B;
+    background-color: #f1f8ff;
+}
+
+/* Error message styles */
+.error-list {
+    color: #ff0000;
+    font-size: 13px;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.error-list li {
+    margin: 0;
+}
+
+/* Submit button styling */
+.btn-register {
+    display: block;
+    width: 100%;
+    background-color:#1F4529;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+    background-color: #47663B;
+}
+
+.btn-logout {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #80C4E9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    background-color: #47663B;
+}
+

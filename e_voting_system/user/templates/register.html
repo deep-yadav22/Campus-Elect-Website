@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="register-card">
+    <h2>Create an Account</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <!-- Loop through each field to display its label, input, and errors -->
+        {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                <!-- Display errors for the current field -->
+                {% if field.errors %}
+                    <ul class="error-list">
+                        {% for error in field.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        {% endfor %}
+        <button type="submit" class="btn-register">Register</button>
+        {% comment %} <a href="{% url 'login' %}" class="">Login</a> {% endcomment %}
+    </form>
+</div>
+{% endblock %}

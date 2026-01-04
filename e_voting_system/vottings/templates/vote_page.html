@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="vote-container">
+    <h2>Vote for Your Candidate</h2>
+    <div class="vote-card">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-vote">Submit Vote</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

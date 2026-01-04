@@ -1,0 +1,215 @@
+/* Container for cards */
+.main-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 80%;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #47663B;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #FAB12F;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #EEE2B5;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #FFF6E9;
+    color: #47663B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #D7B26D;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+
+/* Centering the container */
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+}
+
+/* Card styles */
+.result-card {
+    background-color:#47663B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Set a fixed width */
+    margin: 10px;
+}
+
+.result-card-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FAB12F;
+}
+
+/* List of candidates */
+.result-list {
+    /* list-style-type: none; */
+    padding: 0;
+}
+
+.result-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    text-align: center;
+    list-style: none;
+}
+
+.result-item h3 {
+    margin: 0;
+    font-size: 20px;
+    color:   #47663B;
+}
+
+.result-item p {
+    font-size: 16px;
+    color: #FF9874 ;
+}
+
+
+/*  */
+
+/* Vote Page Container */
+.vote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for the page */
+    min-height: 100vh; /* Ensure full viewport height */
+    box-sizing: border-box;
+}
+
+.vote-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Vote Card */
+.vote-card {
+    width: 100%;
+    max-width: 600px;
+    background-color: #47663B; /* Light cream color */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vote-card form {
+    margin: 0;
+}
+
+.vote-card button.btn-vote {
+    display: inline-block;
+    width: 100%;
+    background-color: #FFF6E9; /* Primary button color */
+    color: #47663B;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.vote-card button.btn-vote:hover {
+    background-color: #FFF6E9; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vote-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .vote-card {
+        padding: 15px;
+    }
+
+    .vote-card button.btn-vote {
+        font-size: 0.9rem;
+    }
+}
+
+.vote-card label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color:#FFF6E9;
+}
+input[type="radio"] {
+    accent-color: rgb(233, 44, 44); /* Use your desired color */
+}

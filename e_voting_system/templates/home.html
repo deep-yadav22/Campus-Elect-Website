@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="banner-image-container">
+    <video autoplay=" "  width="500"height="500" controls=""
+  loop="" class="banner-video">
+	<source src="{% static 'banner/InShot_20241126_202248319.mp4' %}" type="video/mp4">
+</video>
+
+</div>
+<div class="banner-content-container">
+    <div class="banner-content">
+        <p>Welcome to the revolutionary E-Voting platform! Transform how you cast your vote with a system 
+            designed for accessibility, transparency, and security. Participate in elections anytime, anywhere,
+             ensuring your voice is heard in shaping a brighter future.</p>
+        <ul class="benefits-list">
+            <li>Convenient voting from any location.</li>
+            <li>Secure and tamper-proof process.</li>
+            <li>Environmentally friendly by eliminating paper ballots.</li>
+            <li>Quick and accurate result computation.</li>
+            <li>Accessible to people with disabilities or remote voters.</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+
